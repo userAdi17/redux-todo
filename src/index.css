@@ -1,13 +1,59 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.app {
+    width: 100%;
+    height: 100vh;
+    background: url('https://overcoder.net/img/1/10/44/94383.png') center/cover no-repeat;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.sub_app {
+    background: #fff;
+    width: 700px;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search-panel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addTodo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-name{
+    width: 400px;
+    border-bottom: 2px solid black;
+}
+.todo-form {
+    margin-top: 20px;
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+}
+.todo-form button {
+    border: none;
+}
+.important_todo {
+    color: yellow;
+}
+.active_todo{
+    text-decoration: line-through;
+    color: #00000050;
+}
+.active{
+    background: yellow;
+}
+.active_btn{
+    background: rgba(59, 220, 42, 0.86);
+    color: #ffffff;
 }
